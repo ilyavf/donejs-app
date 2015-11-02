@@ -1,0 +1,60 @@
+{
+  "name": "donejs-app",
+  "version": "0.0.0",
+  "description": "",
+  "homepage": "",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "scripts": {
+    "test": "testee src/test.html --browsers firefox --reporter Spec",
+    "start": "can-serve --port 8080",
+    "develop": "can-serve --develop --port 8080",
+    "document": "documentjs",
+    "build": "node build"
+  },
+  "main": "donejs-app/index.stache!done-autorender",
+  "files": [
+    "src"
+  ],
+  "keywords": [],
+  "system": {
+    "main": "donejs-app/index.stache!done-autorender",
+    "directories": {
+      "lib": "src"
+    },
+    "configDependencies": [
+      "live-reload"
+    ],
+    "npmIgnore": [
+      "documentjs",
+      "testee",
+      "donejs-deploy",
+      "generator-donejs",
+      "donejs-cli"
+    ]
+  },
+  "dependencies": {
+    "can": "^2.3.1",
+    "can-connect": "^0.3.1",
+    "can-ssr": "^0.10.1",
+    "done-autorender": "^0.5.0",
+    "done-component": "^0.3.1",
+    "done-css": "^1.1.15",
+    "generator-donejs": "^0.3.4",
+    "jquery": "^2.1.4",
+    "steal": "^0.12.3"
+  },
+  "devDependencies": {
+    "can-fixture": "git://github.com/ilyavf/can-fixture.git#52fbf86c87e2d36c88cb487c0d5e2c7cd0a0f12a",
+    "documentjs": "^0.3.3",
+    "donejs-cli": "^0.5.6",
+    "donejs-deploy": "^0.3.1",
+    "funcunit": "^3.0.0",
+    "steal-qunit": "^0.1.1",
+    "steal-tools": "^0.12.1",
+    "testee": "^0.2.2"
+  }
+}
