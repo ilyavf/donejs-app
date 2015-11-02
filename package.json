@@ -48,7 +48,7 @@
     "steal": "^0.12.3"
   },
   "devDependencies": {
-    "can-fixture": "git://github.com/ilyavf/can-fixture.git#52fbf86c87e2d36c88cb487c0d5e2c7cd0a0f12a",
+    "can-fixture": "0.0.1",
     "documentjs": "^0.3.3",
     "donejs-cli": "^0.5.6",
     "donejs-deploy": "^0.3.1",
